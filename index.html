@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DSA Lab — Every data structure, animated step by step</title>
+  <meta name="description" content="Free interactive simulations of the whole data structures and algorithms syllabus — arrays, linked lists, stacks, infix/postfix/prefix, queues, trees, graphs, sorting, searching and hashing — plus a VS Code-style online code editor.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('dsalab:theme');if(t)document.documentElement.dataset.theme=JSON.parse(t);else if(matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.dataset.theme='light';}catch(e){}</script>
+</head>
+<body data-route="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <button id="menuBtn" class="ib menu" type="button" aria-label="Show all simulations"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <a class="brand" href="#/" aria-label="Home">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 9 23 16 16 23 9 16z" fill="currentColor"/></svg>
+      <span id="brandName">DSA Lab</span>
+    </a>
+    <div class="searchbox" role="search">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search simulations…" aria-label="Search simulations" autocomplete="off" spellcheck="false">
+      <kbd>/</kbd>
+      <div id="qres" class="qres" role="listbox" hidden></div>
+    </div>
+    <nav class="topnav" aria-label="Main">
+      <a href="#/">Topics</a>
+      <a href="#/lab">Code Lab</a>
+      <a href="#/about">About</a>
+    </nav>
+    <button id="themeBtn" class="ib" type="button" aria-label="Toggle light and dark theme"></button>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" aria-label="All simulations">
+      <nav id="sideNav" class="side-nav"></nav>
+      <div class="sidefoot"><a href="#/lab">Code Lab</a> · <a href="#/about">About</a></div>
+    </aside>
+    <div id="scrim" class="scrim"></div>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <noscript><p style="padding:2rem">The simulations need JavaScript. Please enable it and reload.</p></noscript>
+
+  <!-- core engine -->
+  <script src="assets/js/core/util.js"></script>
+  <script src="assets/js/core/scene.js"></script>
+  <script src="assets/js/core/views.js"></script>
+  <script src="assets/js/core/player.js"></script>
+  <script src="assets/js/core/simpage.js"></script>
+  <script src="assets/js/catalog.js"></script>
+  <!-- simulations, grouped by topic -->
+  <script src="assets/js/sims/arrays.js"></script>
+  <script src="assets/js/sims/linked.js"></script>
+  <script src="assets/js/sims/stacks.js"></script>
+  <script src="assets/js/sims/expr.js"></script>
+  <script src="assets/js/sims/queues.js"></script>
+  <script src="assets/js/sims/recursion.js"></script>
+  <script src="assets/js/sims/strings.js"></script>
+  <script src="assets/js/sims/search.js"></script>
+  <script src="assets/js/sims/sort.js"></script>
+  <script src="assets/js/sims/hashing.js"></script>
+  <script src="assets/js/sims/trees.js"></script>
+  <script src="assets/js/sims/searchtrees.js"></script>
+  <script src="assets/js/sims/heaps.js"></script>
+  <script src="assets/js/sims/graphs.js"></script>
+  <script src="assets/js/sims/analysis.js"></script>
+  <!-- C and Python programs for every simulation -->
+  <script src="assets/js/code/code-linear.js"></script>
+  <script src="assets/js/code/code-algos.js"></script>
+  <script src="assets/js/code/code-nonlinear.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
