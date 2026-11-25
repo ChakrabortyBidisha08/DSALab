@@ -1,4 +1,4 @@
-# DSA Lab
+# DSA_Playground
 
 **Every data structure, animated step by step **
 
